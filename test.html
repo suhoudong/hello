@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>javaScript入门</title>
+</head>
+
+<body>
+<p>
+JavaScript 能够直接写入 HTML 输出流中：
+</p>
+
+<script>
+document.write("<h1>This is a heading</h1>");
+document.write("<p>This is a paragraph.</p>");
+</script>
+<script>
+document.write("自己写一个试试");
+</script>
+
+<script>
+function myfunction() //定义一个功能输出div
+{
+	x=document.getElementById("demo"); //查找demo的id 赋值x
+	x.innerHTML="你好<span>可以输出代码</span>"; //改变x内的html内容
+	}
+	
+function changeimage() //定义切换图片
+{ 
+
+//xx=document.getElementById("image") 检索image 赋值给xx
+if (image.src.match("bulbon"))  //匹配到含有bulbon属性的图片值
+    { image.src="http://www.w3school.com.cn/i/eg_bulboff.gif"; //改变src的值
+        }
+else   
+	{ image.src="http://www.w3school.com.cn/i/eg_bulbon.gif"  //无不符合if属性的 赋值
+		}
+	
+}	
+</script>
+
+<img id="image" onclick="changeimage()" src="http://www.w3school.com.cn/i/eg_bulbon.gif">
+<br />
+<br />
+<br />
+<br />
+
+<div  id="demo">这个div会再事件触发后改变内容</div>
+<button type="button" onclick="myfunction()">点击这里</button>
+
+</body>
+</html>
