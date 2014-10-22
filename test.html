@@ -47,6 +47,52 @@ else
 
 <div  id="demo">这个div会再事件触发后改变内容</div>
 <button type="button" onclick="myfunction()">点击这里</button>
+<br />
+<br />
+<br />
+<br />
+<p>字符过滤</p>
+<input id="demo" type="text">
+<script>
+	function myfun()
+	{
+		var x=document.getElementById("demo").value;
+		if (x==""||isNaN(x)) 
+		{
+          alert("不允许这个类别的数据")
+		};
+
+	}
+
+</script>
+<button type="button" onclick="myfun()">点击这里</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
